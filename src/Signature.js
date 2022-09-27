@@ -1,7 +1,7 @@
 import "./Signature.scss";
 function Signature() {
   return (
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
@@ -11,7 +11,7 @@ function Signature() {
         MrBlackvanta
       </a>
       .
-    </div>
+    </footer>
   );
 }
 

@@ -1,4 +1,5 @@
 import hero from "./images/image-header-desktop.jpg";
+import heroPhone from "./images/image-header-mobile.jpg";
 import "./Card.scss";
 
 function Card() {
@@ -30,8 +31,15 @@ function Card() {
       </div>
 
       <div className="card-hero">
+        <picture>
+          <source media="(min-width: 900px)" srcset={heroPhone} />
+          <img
+            src={hero}
+            alt="3 girls sitting on office"
+            className="card-hero-img"
+          />
+        </picture>
         <div className="card-hero-overlay"></div>
-        <img src={hero} alt="girls working" className="card-hero-img" />
       </div>
     </div>
   );

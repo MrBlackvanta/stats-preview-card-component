@@ -1,6 +1,5 @@
 $dark-desaturated-blue: hsl(244, 38%, 16%);
 $soft-violet: hsl(277, 64%, 61%);
-$dark-violet: hsl(275, 100%, 23%);
 
 $slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
 $slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
@@ -28,12 +27,13 @@ $slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
     &-description {
       color: $slightly-transparent-white;
       line-height: 1.5;
+      padding-right: 7.4rem;
     }
 
     &-stats {
       display: flex;
       justify-content: space-between;
-      margin-top: 7rem;
+      margin-top: 5rem;
       text-transform: uppercase;
 
       &-heading {
@@ -55,11 +55,13 @@ $slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
     &-overlay {
       position: absolute;
       inset: 0;
-      background-color: rgba($dark-violet, $alpha: 0.5);
+      background-color: $soft-violet;
+      opacity: 80%;
+      mix-blend-mode: multiply;
     }
 
     &-img {
-      width: 100%;
+      max-width: 100%;
     }
   }
 }
@@ -86,9 +88,14 @@ $slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+    text-align: center;
 
     &-details {
       order: 2;
+
+      &-description {
+        padding: 0;
+      }
 
       &-heading {
         margin-top: 2rem;
@@ -103,8 +110,6 @@ $slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
 
 @media only screen and (max-width: 23.5em) {
   .card {
-    text-align: center;
-
     &-details {
       &-stats {
         flex-direction: column;
