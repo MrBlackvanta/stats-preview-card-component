@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Stats preview 
 
 ![Design preview for the Stats preview card component coding challenge](desktop-preview.jpg)
 
