@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@source not "../../*.md";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-label: var(--font-lexend-deca), ui-sans-serif, system-ui, sans-serif;
+
+  --color-page: #0a0c1c;
+  --color-card: #1b1937;
+  --color-accent: #ab5cdb;
+}
+
+@layer base {
+  html {
+    @apply bg-page font-sans text-white;
+    color-scheme: dark;
+  }
+
+  :focus-visible {
+    @apply v-focus-ring;
+  }
+}
+
+@utility v-focus-ring {
+  @apply outline-accent outline-2 outline-offset-2 outline-solid;
+}
