@@ -31,7 +31,7 @@ const shareImage = {
   url: "/opengraph-image.jpg",
   width: 1200,
   height: 630,
-  alt: `${name} over the line “Insights that help your business grow”, beside the figures 10k+ companies, 314 templates and 12M+ queries.`,
+  alt: `The ${name} card showing 10k+ companies, 314 templates and 12M+ queries, beside the line “Get insights that help your business grow”.`,
 };
 
 export const metadata: Metadata = {
