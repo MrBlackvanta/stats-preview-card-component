@@ -8,6 +8,20 @@
   --color-page: #0a0c1c;
   --color-card: #1b1937;
   --color-accent: #ab5cdb;
+
+  --text-heading: 1.75rem;
+  --text-heading--line-height: 2rem;
+  --text-heading-lg: 2.25rem;
+  --text-heading-lg--line-height: 2.75rem;
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.5625rem;
+  --text-stat: 1.5rem;
+  --text-stat--line-height: 1.8125rem;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.5625rem;
+  --text-label--letter-spacing: 0.0833em;
+
+  --shadow-card: 0 20px 20px -10px rgb(23 25 41 / 0.2);
 }
 
 @layer base {

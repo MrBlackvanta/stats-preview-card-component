@@ -1,5 +1,5 @@
-import { SITE_URL } from "@/app/site";
 import Signature from "@/components/signature";
+import { SITE_URL } from "@/data";
 import type { Metadata, Viewport } from "next";
 import { Inter, Lexend_Deca } from "next/font/google";
 import "./globals.css";
