@@ -1,7 +1,8 @@
 import Signature from "@/components/signature";
 import { SITE_URL } from "@/data";
 import type { Metadata, Viewport } from "next";
-import { Inter, Lexend_Deca } from "next/font/google";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
@@ -11,17 +12,20 @@ const inter = Inter({
   display: "swap",
 });
 
-const lexendDeca = Lexend_Deca({
+const lexendDeca = localFont({
+  src: "../assets/fonts/lexend-deca-400.subset.woff2",
   variable: "--font-lexend-deca",
   weight: "400",
-  subsets: ["latin"],
   display: "swap",
+  declarations: [
+    { prop: "unicode-range", value: "U+41, U+43, U+45, U+49, U+4c-55" },
+  ],
 });
 
 const name = "Bellwether";
 const title = `${name} | Insights that help your business grow`;
 const description =
-  "Discover the benefits of data analytics and make better decisions on revenue, customer experience, and overall efficiency.";
+  "Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.";
 
 const shareImage = {
   url: "/opengraph-image.jpg",
@@ -68,8 +72,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${lexendDeca.variable} antialiased`}
     >
-      <body className="relative grid min-h-dvh place-items-center">
-        <main>{children}</main>
+      <body className="relative">
+        <main className="grid min-h-dvh place-items-center px-6 py-22">
+          {children}
+        </main>
         <Signature />
       </body>
     </html>
